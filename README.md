@@ -95,7 +95,8 @@ This project helps practice:
 - Encoding categorical variables
 - Regression models
 - Cross-validation
-- Model evaluation
+- Model evaluation and residual diagnostics
+- Model stacking / ensembling
 - Creating a Kaggle submission file
 
 ---
@@ -105,13 +106,14 @@ This project helps practice:
 The project follows these steps:
 
 1. Load the data
-2. Explore the dataset
+2. Explore the dataset (distributions, missingness, correlations, neighborhood price levels, multicollinearity)
 3. Clean missing values
-4. Prepare numerical and categorical features
-5. Train machine learning models
-6. Evaluate the models
-7. Make predictions on the test data
-8. Create the submission file
+4. Engineer and prepare numerical and categorical features
+5. Train and cross-validate several regression models (linear + tree-based)
+6. Stack the best models into an ensemble
+7. Diagnose model errors (predicted vs actual, residuals, permutation importance, learning curve, worst predictions)
+8. Make predictions on the test data
+9. Create the submission file
 
 ---
 
